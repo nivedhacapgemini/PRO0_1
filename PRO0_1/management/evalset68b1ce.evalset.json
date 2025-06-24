@@ -1,0 +1,281 @@
+{
+  "eval_set_id": "evalset68b1ce",
+  "name": "evalset68b1ce",
+  "description": null,
+  "eval_cases": [
+    {
+      "eval_id": "case85499e",
+      "conversation": [
+        {
+          "invocation_id": "e-0e04e9d6-f1e1-4866-9b46-69f4b9ccb579",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "hi"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Hola. How can I help you today?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1750775753.804838
+        },
+        {
+          "invocation_id": "e-655830ba-26f3-4fac-92fb-6295cd9c3b18",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "i want to check in"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Okay, I can help you with your check-in. How are you feeling today?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-6ec269ff-59be-4fd6-8aaa-2017472d2bb7",
+                "args": {
+                  "agent_name": "companion_agent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1750775773.007382
+        },
+        {
+          "invocation_id": "e-5aeb74f5-5e6d-41f3-a405-ad8599abc1b7",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "i feel dizzy"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I'm sorry to hear you're feeling dizzy. Can you tell me more about it? When did the dizziness start, and how often does it occur?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1750775857.318324
+        },
+        {
+          "invocation_id": "e-b7ab38b1-557e-4670-9498-8667bc6766c7",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "i want to consult doctor"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "I understand you're feeling dizzy and want to consult a doctor. I'm here to gather some information to help determine the best course of action. Can you tell me more about your dizziness? Is it constant, or does it come and go? Are there any other symptoms you're experiencing, such as nausea, headache, or blurred vision?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-d658e128-4731-4114-a0f1-643d747a9894",
+                "args": {
+                  "agent_name": "management"
+                },
+                "name": "transfer_to_agent"
+              },
+              {
+                "id": "adk-f269b132-f563-4615-aecf-be00609e2cf3",
+                "args": {
+                  "agent_name": "AdaptiveQuestionnaireAgent"
+                },
+                "name": "transfer_to_agent"
+              }
+            ],
+            "intermediate_responses": [
+              [
+                "management",
+                [
+                  {
+                    "video_metadata": null,
+                    "thought": null,
+                    "inline_data": null,
+                    "file_data": null,
+                    "thought_signature": null,
+                    "code_execution_result": null,
+                    "executable_code": null,
+                    "function_call": null,
+                    "function_response": null,
+                    "text": "Given your reported dizziness, I'll transfer you to the AdaptiveQuestionnaireAgent to assess your health concerns further.\n"
+                  }
+                ]
+              ]
+            ]
+          },
+          "creation_timestamp": 1750775876.968069
+        }
+      ],
+      "session_input": {
+        "app_name": "management",
+        "user_id": "user",
+        "state": {}
+      },
+      "creation_timestamp": 1750776784.6218195
+    },
+    {
+      "eval_id": "case97881b",
+      "conversation": [
+        {
+          "invocation_id": "e-91e5d58e-2208-468e-8a92-ac67e08a7626",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "hi"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "Hola! How can I help you today?\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1750777163.584956
+        }
+      ],
+      "session_input": {
+        "app_name": "management",
+        "user_id": "user",
+        "state": {}
+      },
+      "creation_timestamp": 1750777176.3496506
+    }
+  ],
+  "creation_timestamp": 1750776777.6773417
+}
